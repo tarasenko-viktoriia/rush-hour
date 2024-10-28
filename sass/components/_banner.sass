@@ -1,0 +1,26 @@
+.banner
+    width: 100%
+    overflow: hidden
+    margin-bottom: 200px
+    display: flex
+    justify-content: center
+
+    @media (width < 1024px)
+        margin-bottom: 100px
+    
+    @media (width < 745px)
+        margin-bottom: 60px
+
+    img
+        width: 100%
+        height: auto
+        display: block
+        object-fit: cover
+        max-width: none
+
+        @media (width < 1024px) 
+            width: 120%
+
+        @media (width < 745px)
+            width: 140%
+            margin-left: 17%

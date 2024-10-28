@@ -1,0 +1,19 @@
+.header
+    position: relative
+    z-index: 1
+    margin-bottom: 40px
+
+    &::before
+        content: ""
+        position: absolute
+        top: 0
+        left: 0
+        width: 100vw
+        height: 950px
+        background: $gradient-header
+        z-index: -1
+
+        @media (width < 745px)
+            content: ""
+            width: 100vw
+            height: 810px

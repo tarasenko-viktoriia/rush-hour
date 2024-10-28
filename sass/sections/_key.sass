@@ -1,0 +1,184 @@
+.key
+    position: relative
+    overflow: hidden
+
+    &::before, &::after
+        content: ""
+        position: absolute
+        left: 0
+        width: 100vw
+        z-index: -1
+
+    &::before
+        top: 1486px
+        height: 2000px
+        background: $gradient-key-before
+        
+        @media (width < 1024px) 
+            top: 2471px
+            height: 1370px
+            background:$gradient-key-adaptive
+
+        @media (width < 745px)
+            top: 2084px
+            height: 1072px
+            background: $gradient-conclusions
+    &::after
+        bottom: 1000px
+        height: 1900px
+        background: $gradient-key-after
+        
+        @media (width < 1024px) 
+            top: 959px
+            height: 1370px
+            background: $gradient-key-adaptive-after
+
+        @media (width < 745px)
+            top: 945px
+            height: 700px
+            background: $gradient-key-adaptive
+.key__container::after
+    @media (width < 1024px) 
+        content: ""
+        position: absolute
+        bottom: 0
+        left: 0
+        height: 650px
+        width: 100vw
+        background: $gradient-conclusions
+        z-index: -1
+    
+    @media (width < 745px)
+        display: none
+
+.key__title
+    font-size: 56px
+    font-weight: 600
+    line-height: 1
+    text-transform: uppercase
+    margin-bottom: 100px
+
+    @media (width < 1024px) 
+        font-size: 40px
+        margin-bottom: 60px
+    
+    @media (width < 745px)
+        font-size: 24px
+        margin-bottom: 40px
+
+.key__block
+    display: flex
+    justify-content: space-between
+    margin-bottom: 60px
+    gap: 130px
+
+    @media (width < 1024px) 
+        flex-direction: column
+        gap: 24px
+        margin-bottom: 40px
+    
+    @media (width < 745px)
+        flex-direction: column
+        gap: 12px
+        margin-bottom: 24px
+
+.key__subtitle
+    color: $turquoise
+    font-size: 32px
+    font-weight: 600
+    line-height: 1.25
+    width: 30%
+    box-sizing: border-box
+
+    @media (width < 1024px) 
+        font-size: 24px
+    
+    @media (width < 745px)
+        font-size: 18px
+        width: 100%
+        line-height: 1.4
+
+.key__list
+    font-size: 18px
+    line-height: 1.7
+    width: 70%
+    box-sizing: border-box
+    color: $grey
+
+    @media (width < 1024px) 
+        position: relative
+        left: 15px
+        font-size: 16px
+        width: 100%
+    
+    @media (width < 745px)
+        font-size: 14px
+        width: 100%
+
+.key__img--dispatch
+    max-width: 100%
+    position: relative
+    display: flex
+    align-items: flex-end
+
+    img
+        width: 100%
+        height: auto
+
+        &:nth-child(1)
+            position: relative
+            margin-top: 0
+            max-width: 70%
+
+        &:nth-child(2)
+            position: relative
+            top: 50%
+            max-width: 29%
+
+        &:nth-child(3)
+            position: absolute
+            top: 21%
+            left: 36%
+            max-width: 48%
+
+.key__img--accounting
+    max-width: 100%
+    position: relative
+    display: block
+
+    img
+        width: 100%
+        height: auto
+
+        &:nth-child(1)
+            float: right
+            margin-top: 0
+            max-width: 75%
+
+        &:nth-child(2)
+            position: absolute
+            bottom: 17%
+            left: 74%
+            max-width: 37%
+            transform: translateX(-50%)
+
+        &:nth-child(3)
+            max-width: 70%
+
+        &:nth-child(4)
+            position: absolute
+            top: 14%
+            left: 10%
+            max-width: 15%
+
+.key__img
+    margin-bottom: 160px
+
+    @media (width < 1024px) 
+        margin-bottom: 100px
+    
+    @media (width < 745px)
+        margin-bottom: 60px
+
+    img
+        width: 100%

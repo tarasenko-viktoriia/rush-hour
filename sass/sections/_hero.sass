@@ -1,0 +1,110 @@
+.hero
+    position: relative
+    z-index: 1
+
+.logo__container, .hero__container
+    max-width: 1200px
+    margin: 0 auto
+
+.hero__title
+    text-align: center
+    font-size: 180px
+    font-weight: 700
+    background: $gradient-title
+    color: transparent
+    -webkit-background-clip: text
+    line-height: 1.1
+    margin-bottom: 20px
+
+    @media (width < 1024px)
+        font-size: 110px
+        margin-bottom: 16px
+    
+    @media (width < 745px)
+        font-size: 57px
+        margin-bottom: 8px
+
+.hero__img img
+    max-width: 100%
+    height: auto
+    display: block
+    margin: 0 auto
+
+.hero__text
+    text-align: center
+    font-size: 28px
+    line-height: 1.2
+    margin-bottom: 9px
+
+    @media (width < 1024px)
+        font-size: 18px
+        margin-bottom: 24px
+
+    @media (width < 745px)
+        font-size: 12px
+        margin-bottom: 8px
+
+.hero__description
+    background-color: $turquoise
+    padding: 80px 15px
+
+    @media (width < 1024px)
+        padding: 60px 64px
+
+    @media (width < 745px)
+        padding: 40px 16px
+
+.description-block__content
+    max-width: 1200px
+    margin: 0 auto
+
+.description-block__title
+    color: $light
+    font-size: 32px
+    font-weight: 600
+    line-height: 1.25
+    margin-bottom: 40px
+    
+    @media (width < 1024px)
+        font-size: 28px
+        margin-bottom: 24px
+
+    @media (width < 745px)
+        font-size: 18px
+        margin-bottom: 12px
+
+.description-block__text
+    color: $light
+    font-size: 18px
+    line-height: 1.7
+
+    @media (width < 1024px)
+        font-size: 16px
+
+    @media (width < 745px)
+        font-size: 14px
+        line-height: 1.7
+
+.icon-text-container
+    display: flex
+    align-items: center
+    padding: 12px 24px
+    border-radius: 60px
+    border: 1px solid $turquoise
+    background: $gradient-tech-container
+    max-width: 360px
+    margin-left: auto
+    margin-right: 100px
+
+    @media (width < 1024px) 
+        justify-content: flex-end
+        transform: translateX(0)
+        margin-right: 0
+        max-width: 242px
+        padding: 8px 16px
+        margin-bottom: 10px
+
+    @media (width < 745px)
+        max-width: 200px
+        padding: 8px 16px
+        margin-bottom: 40px

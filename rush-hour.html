@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="sass/styles.css">
+   <link rel="shortcut icon" href="images/rush-hour/logo/favicon-32x32.png" sizes="32x32" type="image/x-icon">
+   <link href="https://fonts.googleapis.com/css?family=Poppins:regular,600,700&display=swap" rel="stylesheet">
+   <title>RushHour</title>
+</head>
+
+<body>
+   <div class="wrapper">
+         <header class="header">
+            <div class="logo__container">
+               <div class="logo">
+                  <div class="logo__img">
+                     <img src="images/rush-hour/logo/logo.png" alt="Logo Fernir">
+                  </div>
+                  <div class="logo__text">
+                     <p>Fernir</p>
+                  </div>
+               </div>
+            </div>
+         </header>
+         <main>
+            <div class="hero">
+               <div class="hero__container">
+                  <h1 class="hero__title">RushHour</h1>
+                  <div class="hero__text">
+                     <p>Comprehensive <br> Multi-tenant Logistic System</p>
+                  </div>
+                  <div class="hero__img">
+                     <img src="images/rush-hour/hero.png" alt="Application RushHour" onclick="openModal(this.src)">
+                  </div>
+               </div>
+               <div class="hero__description description-block">
+                  <div class="description-block__content">
+                     <h3 class="description-block__title">Project Overview:</h3>
+                     <div class="description-block__text">
+                        <p>RushHour is an advanced multi-tenant logistics system designed to revolutionize the way truck
+                           driver deliveries are
+                           managed.
+                           Developed by our team, this platform integrates a powerful web portal for companies and a
+                           responsive Telegram bot for
+                           drivers, creating a seamless experience from order creation to delivery completion. The
+                           system is built to handle the
+                           complex logistics needs of multiple companies while ensuring scalability, security, and
+                           efficiency.</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+      <div class="bg-tech">
+         <div class="tech">
+            <div class="tech__container">
+               <div class="tech__title">
+                  <h2>Technologies used:</h2>
+               </div>
+               <div class="icon-text-container">
+                  <img src="images/rush-hour/tabler-icon-note.svg" alt="Icon" class="icon" />
+                  <span class="text">Used the best technologies
+                     for the best result</span>
+               </div>
+               <div class="tech__items">
+                  <div class="first-colum">
+                     <div class="tech__card item-tech">
+                        <div class="item-tech__title">
+                           <img src="images/rush-hour/check.svg" alt="Check">
+                           <h3>Amazon S3</h3>
+                        </div>
+                        <div class="item-tech__text">
+                           <p>Utilized for scalable storage solutions, ensuring that all data, including delivery records,
+                              customer information, and invoices, are stored securely and can be accessed quickly.</p>
+                        </div>
+                     </div>
+                     <div class="tech__card item-tech">
+                        <div class="item-tech__title">
+                           <img src="images/rush-hour/check.svg" alt="Check">
+                           <h3>ElasticSearch</h3>
+                        </div>
+                        <div class="item-tech__text">
+                           <p>Implemented to enhance search capabilities, allowing operators to efficiently search through
+                              large volumes of orders, invoices, and customer data.</p>
+                        </div>
+                     </div>
+                     <div class="tech__card item-tech">
+                        <div class="item-tech__title">
+                           <img src="images/rush-hour/check.svg" alt="Check">
+                           <h3>.NET Core 6 & ASP.NET Core</h3>
+                        </div>
+                        <div class="item-tech__text">
+                           <p>The backbone of the system, providing a robust, high-performance environment for building and
+                              running the application. This ensures that the platform can handle multiple tenants without
+                              performance degradation.</p>
+                        </div>
+                     </div>
+                     <div class="tech__card item-tech">
+                        <div class="item-tech__title">
+                           <img src="images/rush-hour/check.svg" alt="Check">
+                           <h3>ASP.NET Core Identity</h3>
+                        </div>
+                        <div class="item-tech__text">
+                           <p>Provides secure user authentication and management, ensuring that only authorized personnel
+                              can access sensitive data and system functionalities.</p>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="second-colum">
+                     <div class="tech__card item-tech">
+                        <div class="item-tech__title">
+                           <img src="images/rush-hour/check.svg" alt="Check">
+                           <h3>SignalR</h3>
+                        </div>
+                        <div class="item-tech__text">
+                           <p>Used to enable real-time communication between the web portal and the Telegram bot, ensuring
+                              that drivers receive instant updates on their delivery tasks and that companies can track
+                              deliveries as they happen.</p>
+                        </div>
+                     </div>
+                     <div class="tech__card item-tech">
+                        <div class="item-tech__title">
+                           <img src="images/rush-hour/check.svg" alt="Check">
+                           <h3>Entity Framework & MySQL</h3>
+                        </div>
+                        <div class="item-tech__text">
+                           <p>Combined to manage the system's relational data, offering efficient data access and
+                              management while ensuring the reliability of the multi-tenant architecture.</p>
+                        </div>
+                     </div>
+                     <div class="tech__card item-tech">
+                        <div class="item-tech__title">
+                           <img src="images/rush-hour/check.svg" alt="Check">
+                           <h3>Docker</h3>
+                        </div>
+                        <div class="item-tech__text">
+                           <p>Ensures consistent environments across development, testing, and production, allowing the
+                              system to be easily deployed and scaled.</p>
+                        </div>
+                     </div>
+                     <div class="tech__card item-tech">
+                        <div class="item-tech__title">
+                           <img src="images/rush-hour/check.svg" alt="Check">
+                           <h3>Angular</h3>
+                        </div>
+                        <div class="item-tech__text">
+                           <p>Used to create a dynamic, responsive frontend for the web portal, offering a seamless and
+                              intuitive user experience for operators and administrators.</p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="key">
+         <div class="key__container">
+            <div class="key__title">
+               <h2>Key Features:</h2>
+            </div>
+            <div class="key__block">
+               <div class="key__subtitle">
+                  <h3>Dashboard</h3>
+               </div>
+               <div class="key__list">
+                  <ul>
+                     <li>The dashboard offers a comprehensive view of overall activity, including delivery statuses,
+                        driver performance, and financial metrics.</li>
+                     <li>Customizable widgets allow clients to tailor the dashboard to their specific needs, providing
+                        quick access to the most relevant information.</li>
+                     <li>Visual data representations, such as graphs and charts, help users quickly interpret trends and
+                        make informed decisions.</li>
+                  </ul>
+               </div>
+            </div>
+            <div class="key__img">
+               <img src="images/rush-hour/key/img-01.png" alt="Application RushHour" onclick="openModal(this.src)">
+            </div>
+            <div class="key__block">
+               <div class="key__subtitle">
+                  <h3>Order list</h3>
+               </div>
+               <div class="key__list">
+                  <ul>
+                     <li>A centralized hub where operators can access detailed information about every order, from its
+                        creation to its delivery.</li>
+                     <li>Filters and search functionality allow users to easily locate specific orders based on various
+                        criteria, such as delivery status, customer name, or order date.</li>
+                     <li>Each order entry includes comprehensive details, such as product descriptions, delivery
+                        instructions, assigned drivers, and associated invoices.</li>
+                  </ul>
+               </div>
+            </div>
+            <div class="key__img">
+               <img src="images/rush-hour/key/img-02.png" alt="Application RushHour" onclick="openModal(this.src)">
+            </div>
+            <div class="key__block">
+               <div class="key__subtitle">
+                  <h3>Dispatch</h3>
+               </div>
+               <div class="key__list">
+                  <ul>
+                     <li>The dispatch module enables real-time tracking of deliveries, with a map interface showing the
+                        exact locations of trucks and their routes.</li>
+                     <li>Dispatchers can monitor the progress of each delivery, receive real-time updates from drivers,
+                        and adjust routes or assignments as needed to optimize efficiency.</li>
+                     <li>The module also includes detailed driver profiles, allowing dispatchers to assign tasks based
+                        on driver availability, expertise, and past performance.</li>
+                  </ul>
+               </div>
+            </div>
+            <div class="key__img key__img--dispatch">
+               <img src="images/rush-hour/dispatch-img-1.png" alt="Application RushHour" onclick="openModal(this.src)">
+               <img src="images/rush-hour/dispatch-img-2.png" alt="Application RushHour" onclick="openModal(this.src)">
+               <img src="images/rush-hour/dispatch-img-03.svg" alt="Line">
+            </div>
+            <div class="key__block">
+               <div class="key__subtitle">
+                  <h3>Customer List</h3>
+               </div>
+               <div class="key__list">
+                  <ul>
+                     <li>A complete database of customers, including contact details, delivery history, and satisfaction
+                        ratings.</li>
+                     <li>The system allows companies to manage customer relationships more effectively by tracking
+                        interactions, preferences, and feedback.</li>
+                     <li>Integrated rating systems help identify top customers and those who may need more attention,
+                        supporting better customer service and retention strategies.</li>
+                  </ul>
+               </div>
+            </div>
+            <div class="key__img">
+               <img src="images/rush-hour/key/img-04.png" alt="Application RushHour" onclick="openModal(this.src)">
+            </div>
+            <div class="key__block">
+               <div class="key__subtitle">
+                  <h3>Accounting</h3>
+               </div>
+               <div class="key__list">
+                  <ul>
+                     <li>A robust accounting module that tracks all financial transactions, including customer invoices
+                        and payments.</li>
+                     <li>Users can view each customer's billing history, generate new invoices, and record payments
+                        directly within the system.</li>
+                     <li>The module supports multiple billing methods and currencies, making it suitable for businesses
+                        operating in different regions.</li>
+                  </ul>
+               </div>
+            </div>
+            <div class="key__img key__img--accounting">
+               <img src="images/rush-hour/acc-img-01.png" alt="Application RushHour" onclick="openModal(this.src)">
+               <img src="images/rush-hour/acc-img-02.png" alt="Application RushHour" onclick="openModal(this.src)">
+               <img src="images/rush-hour/acc-img-03.png" alt="Application RushHour" onclick="openModal(this.src)">
+               <img src="images/rush-hour/acc-line.svg" alt="Line">
+            </div>
+            <div class="key__block">
+               <div class="key__subtitle">
+                  <h3>Outsource List</h3>
+               </div>
+               <div class="key__list">
+                  <ul>
+                     <li>The outsource list manages information on external drivers and companies that can be engaged
+                        for delivery tasks.</li>
+                     <li> The system supports seamless collaboration with third-party providers, ensuring that companies
+                        can scale their operations by tapping into external resources.</li>
+                     <li> The module also tracks the performance of outsourced partners, helping companies maintain
+                        quality control and accountability.</li>
+                  </ul>
+               </div>
+            </div>
+            <div class="key__img">
+               <img src="images/rush-hour/key/img-06.png" alt="Application RushHour" onclick="openModal(this.src)">
+            </div>
+            <div class="key__block">
+               <div class="key__subtitle">
+                  <h3>Settings</h3>
+               </div>
+               <div class="key__list">
+                  <ul>
+                     <li>The settings module provides extensive customization options, allowing companies to tailor the
+                        system to their specific operational needs.</li>
+                     <li>Users can edit company information, configure billing methods, add or remove locations, and
+                        manage user accounts and permissions.</li>
+                     <li>The module also supports localization features, enabling companies to adapt the system to
+                        different languages, time zones, and regulatory environments.</li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="banner">
+         <img src="images/rush-hour/macbook.png" alt="Macbook" onclick="openModal(this.src)">
+      </div>
+      <div class="conclusions">
+         <div class="conclusions__container">
+            <div class="conclusions__items">
+               <div class="conclusions__text">
+                  <h4>Project Outcomes</h4>
+                  <p>RushHour has dramatically improved the efficiency and effectiveness of logistics operations for the
+                     customers. The system's multi-tenant architecture allows different businesses to manage their
+                     logistics independently while benefiting from shared infrastructure. The web portal's user-friendly
+                     design and the Telegram bot's real-time capabilities have enhanced communication between operators
+                     and drivers, leading to faster and more accurate deliveries. The system's advanced features, such
+                     as real-time tracking, customizable dashboards, and integrated accounting, provide clients with a
+                     powerful toolset for managing their logistics operations.</p>
+               </div>
+               <div class="conclusions__img">
+                  <img src="images/rush-hour/img-01.png" alt="Application RushHour" onclick="openModal(this.src)">
+               </div>
+            </div>
+            <div class="conclusions__items conclusions__items--order">
+               <div class="conclusions__img conclusions__img--margin">
+                  <img src="images/rush-hour/img-02.png" alt="Application RushHour" onclick="openModal(this.src)">
+               </div>
+               <div class="conclusions__text conclusions__text--position">
+                  <h4>Conclusion</h4>
+                  <p>The RushHour project is a testament to our team's ability to deliver complex, high-performance
+                     logistics solutions that meet the needs of modern businesses. By leveraging a wide range of
+                     technologies, including .NET Core, Angular, Docker, and ElasticSearch, we created a platform that
+                     is both scalable and secure, capable of handling the logistics needs of multiple companies with
+                     ease. This project highlights our expertise in developing systems that enhance operational
+                     efficiency, improve communication, and provide businesses with the tools they need to succeed in a
+                     competitive environment.</p>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div id="modal" class="modal">
+         <span class="close">&times;</span>
+         <img class="modal-content" id="modalImage">
+      </div>
+      </main>
+      <footer></footer>
+   </div>
+   <script src="./js/script.js"></script>
+</body>
+
+</html>

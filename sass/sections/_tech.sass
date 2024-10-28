@@ -1,0 +1,179 @@
+.bg-tech
+    position: relative
+
+.tech::before
+    content: ""
+    position: absolute
+    top: 120px
+    left: 0
+    width: 100vw
+    height: 80%
+    background: $gradient-tech-before
+    z-index: -1
+
+    @media (width < 1024px) 
+        content: ""
+        position: absolute
+        top: 15px
+    
+    @media (width < 745px)
+        top: 1500px
+        height: 830px
+        background: $gradient-key-before
+
+.bg-tech::before
+    content: ""
+    position: absolute
+    top: 20%
+    left: 0
+    width: 100vw
+    height: 1602px
+    background: $gradient-bg-tech-before
+    z-index: -1
+
+    @media (width < 1024px)
+        content: ""
+        position: absolute
+        top: 0
+        left: 0
+        width: 100vw
+        height: 130%
+        background: $gradient-bg-tech-1024
+        z-index: -1
+    
+    @media (width < 745px)
+        content: ""
+        position: absolute
+        top: 100px
+        left: 0
+        width: 100vw
+        height: 1180px
+        background: $gradient-bg-tech-745
+        z-index: -1
+
+.tech
+    padding: 160px 0
+
+    @media (width < 1024px)
+        padding: 100px 0
+    
+    @media (width < 745px)
+        padding: 60px 0
+
+
+.tech__title
+    font-size: 56px
+    font-weight: 600
+    line-height: 1
+    text-transform: uppercase
+    margin-bottom: 34px
+
+    @media (width < 1024px)
+        font-size: 40px
+        margin-bottom: 40px
+
+    @media (width < 745px)
+        font-size: 24px
+        margin-bottom: 30px
+        line-height: 1.4
+
+.icon
+    width: 40px
+    height: 40px
+    margin-right: 22px
+
+    @media (width < 1024px)
+        width: 32px
+        height: 32px
+        margin-right: 12px
+    
+    @media (width < 745px)
+        width: 16px
+        height: 16px
+        margin-right: 12px
+
+.text
+    color: $turquoise
+    font-size: 18px
+    line-height: 1.11
+
+    @media (width < 1024px)
+        font-size: 12px
+        line-height: 1.4
+
+    @media (width < 745px)
+        font-size: 10px
+        line-height: 1.4
+
+.tech__card
+    border-radius: 24px
+    border: 1px solid $light
+    background: $light
+    box-shadow: 0px 2px 8px 0px rgba(8, 27, 56, 0.1)
+    padding: 40px 20px
+
+    @media (width < 1024px)
+        padding: 32px 20px
+
+.item-tech:not(:last-child)
+    margin-bottom: 24px
+
+    @media (width < 1024px) 
+        margin-bottom: 12px
+
+    @media (width < 745px)
+        margin-bottom: 12px
+
+.item-tech__title
+    display: flex
+    gap: 12px
+    font-size: 24px
+    font-weight: 600
+    line-height: 1.41
+    align-items: center
+    margin-bottom: 24px
+
+    @media (width < 1024px)
+        font-size: 20px
+        margin-bottom: 16px
+
+    @media (width < 745px)
+        font-size: 16px
+        margin-bottom: 12px
+
+    img
+        width: 42px
+
+        @media (width < 1024px)
+            width: 32px
+
+        @media (width < 745px)
+            width: 24px
+
+.item-tech__text
+    font-size: 16px
+    line-height: 1.7
+    color: $grey
+
+    @media (width < 1024px)
+        font-size: 14px
+
+    @media (width < 745px)
+        font-size: 12px
+        line-height: 1.7
+    
+.tech__items
+    display: flex
+    gap: 24px
+
+    @media (width < 1024px)
+        gap: 12px
+    
+    @media (width < 745px)
+        display: block
+
+.second-colum
+    margin-top: 100px
+
+    @media (width < 745px)
+        margin-top: 12px

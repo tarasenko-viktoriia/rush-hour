@@ -1,0 +1,129 @@
+.conclusions
+    position: relative
+    overflow: hidden
+
+    &::before
+        content: ""
+        position: absolute
+        top: 0
+        left: 50%
+        transform: translateX(-50%)
+        width: 100%
+        height: 100%
+        background: $gradient-conclusions
+        z-index: -1
+        pointer-events: none
+
+.conclusions__items
+    display: flex
+    position: relative
+    justify-content: space-between
+    gap: 24px
+
+    @media (width < 1024px)
+        display: flex
+        flex-direction: column
+        gap: 40px
+    
+    @media (width < 745px)
+        display: flex
+        flex-direction: column
+        width: 100%
+        gap: 24px
+
+    &:not(:last-child)
+        margin-bottom: 85px
+
+        @media (width < 1024px)
+            margin-bottom: 100px
+        
+        @media (width < 745px)
+            margin-bottom: 60px
+
+    &:last-child
+        margin-bottom: 50px
+
+.conclusions__items--order
+    @media (width < 1024px)
+        display: flex
+        flex-direction: column-reverse
+
+    @media (width < 745px)
+        display: flex
+        flex-direction: column-reverse
+
+.conclusions__text
+    @media (width < 1024px)
+        position: relative
+        top: 0
+        width: 100%
+    
+    @media (width < 745px)
+        top: 0
+        width: 100%
+    h4
+        color: $turquoise
+        font-size: 32px
+        font-weight: 600
+        line-height: 1.25
+        margin-bottom: 24px
+
+        @media (width < 1024px)
+            font-size: 24px
+        
+        @media (width < 745px)
+            font-size: 24px
+            margin-bottom: 12px
+
+    p
+        font-size: 18px
+        line-height: 1.7
+        color: $grey
+
+        @media (width < 1024px)
+            font-size: 16px
+        
+        @media (width < 745px)
+            font-size: 14px
+
+.conclusions__text--position
+    position: relative
+    top: 40px
+
+    @media (width < 1024px)
+        position: relative
+        right: 0
+
+.conclusions__img
+    position: relative
+    overflow: visible
+
+    img
+        position: relative
+        top: -45px
+        margin-right: -350px
+        width: auto
+        display: block
+
+        @media (width < 1024px)
+            width: 100%
+        
+        @media (width < 745px)
+            top: 0
+            margin-right: 0
+            margin-left: 0
+            width: 100%
+
+.conclusions__img--margin img
+    position: relative
+    top: -45px
+    margin-right: 20px
+    margin-left: -275px
+    width: auto
+    display: block
+
+    @media (width < 1024px)
+        width: 100%
+        position: relative
+        top: 0
+        margin: 0
